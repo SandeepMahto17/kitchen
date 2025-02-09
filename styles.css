@@ -127,28 +127,28 @@ nav ul li a {
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     gap: 15px;
     padding: 20px;
+    width: 100%;
+    height: auto;
 }
 
 .grid-container img {
     width: 100%;
     height: auto;
     display: block;
-    border-radius: 10px;
 }
 .item{
-    background: white;
-    border-radius: 10px;
-    padding: 15px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     display: flex;
     flex-direction: column;
     align-items: center;
-    text-align: center;
+    /* text-align: center; */
 }
 .menu-foot{
+    width: 100%;
+    height: auto;
     display: flex;
     flex-direction: column;
-    background: white;
+    background: white; 
+    padding: 10px 0;
 }
 .menu-header{
     display: flex;
@@ -157,18 +157,20 @@ nav ul li a {
     gap:80px;
 }
 .menu-info{
-    /* display: flex;
+    display: flex;
+    gap:80px;
+    justify-content: space-between;
+    padding-right: 10px;
+}
+
+.menu-info-left{
+    display: flex;  
+    gap:20px;
     align-items: center;
     justify-content: center;
-    gap:80px; */
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-    margin-top: 10px;
-
+    padding-left: 10px;
 }
-.rating-time {
+.rating-box {
     display: flex;
     gap: 10px;
 }
@@ -181,9 +183,12 @@ nav ul li a {
     align-items: center;
     gap: 5px;
 }
-.rating::before {
-    content: "★";
-    color: gold;
+.rating-box::before {
+    color: black;
+    font-size: 20px;
+}
+.star{
+    color: black;
 }
 .add-btn {
     background: yellow;
@@ -199,10 +204,7 @@ nav ul li a {
     cursor: pointer;
     color: white;
 }
-/* .menu-info-left{
-    display: flex;  
-    gap:10px;
-} */
+
 .request-dish {
     text-align: center;
     padding: 20px;
