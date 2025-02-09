@@ -14,7 +14,9 @@ header {
     background-size: cover;
     background-position: center;
 }
-
+h1{
+    color: #F0FAF7;
+}
 nav ul {
     list-style: none;
     padding: 0;
@@ -36,16 +38,67 @@ nav ul li a {
 .hero {
     text-align: center;
     padding: 50px;
-    background-color: #2EBF91;
+    background-color: #1AC073;
     background-image: url('hero-section.jpg');
     background-size: cover;
     background-position: center;
 }
 
+.logo{
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 10px;
+    font-size: 24px;
+    font-weight: bold;
+    color:#F0FAF7;
+}
+
+.class{
+    text-align: justify;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.hero {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 20px;
+    background-color: #1AC073;
+    min-height: 100vh;
+}
+
+.hero-content {
+    max-width: 600px;
+    text-align: left;
+}
+
+.home h1 {
+    font-size: 4rem;
+    line-height: 1.2;
+    color: #F0FAF7;
+    margin-bottom: 10px;
+}
+
+.home h1:last-child {
+    margin-bottom: 20px;
+}
+
+.hero-content p {
+    font-size: 1.2rem;
+    color: #F0FAF7;
+    margin-bottom: 20px;
+}
+
 .hero input {
     padding: 10px;
     margin-top: 10px;
-    border: 1px solid #ccc;
+    border: 1px solid #F0FAF7;
     border-radius: 5px;
 }
 
