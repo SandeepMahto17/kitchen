@@ -1,0 +1,239 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #F0FAF7;
+}
+
+header {
+    background-color: #1AC073;
+    padding: 15px;
+    color: white;
+    text-align: center;
+    background-image: url('header-bg.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.hero {
+    text-align: center;
+    padding: 50px;
+    background-color: #2EBF91;
+    background-image: url('hero-section.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.hero input {
+    padding: 10px;
+    margin-top: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.hero button {
+    padding: 10px 15px;
+    background-color: #F3BA00;
+    color: white;
+    border: none;
+    cursor: pointer;
+    margin-left: 10px;
+    border-radius: 5px;
+}
+
+.menu {
+    text-align: center;
+    padding: 20px;
+    background-color: #F2F2F2;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 15px;
+    padding: 20px;
+}
+
+.grid-container img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 10px;
+}
+
+.request-dish {
+    text-align: center;
+    padding: 20px;
+    background-color: #F0FAF7;
+    background-image: url('request-dish.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.request-dish input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.request-dish button {
+    padding: 10px 15px;
+    background-color: #1AC073;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+footer {
+    background-color: #1AC073;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    background-image: url('footer-bg.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+/* Cart Modal */
+.cart-modal {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 346px 241px;
+    gap: 55px;
+    position: absolute;
+    width: 1336px;
+    height: 1154px;
+    left: 52px;
+    top: 117px;
+    background: #F7F8FA;
+    border-radius: 20px;
+}
+
+.cart-modal .icon {
+    width: 197px;
+    height: 225px;
+    border: 28px solid #EDEDED;
+}
+
+.cart-modal .text {
+    text-align: center;
+}
+
+.cart-modal h2 {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 40px;
+    letter-spacing: -0.012em;
+    color: #000000;
+}
+
+.cart-modal p {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    letter-spacing: -0.012em;
+    color: #AAA7A7;
+}
+
+.cart-modal button {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 19px 25px;
+    gap: 10px;
+    width: 210px;
+    height: 58px;
+    background: #1AC073;
+    border-radius: 10px;
+    color: white;
+    font-weight: 500;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+/* Request Dish Modal */
+.request-dish-modal {
+    position: absolute;
+    width: 1336px;
+    height: 647px;
+    left: 52px;
+    top: 107px;
+    background: #F7F8FA;
+    border-radius: 20px;
+    text-align: center;
+    padding: 50px;
+}
+
+.request-dish-modal h2 {
+    font-family: 'Roboto';
+    font-weight: 800;
+    font-size: 40px;
+    color: #000000;
+}
+
+.request-dish-modal input {
+    width: 1127px;
+    height: 48px;
+    padding: 16px;
+    background: #F2F2F2;
+    border-radius: 10px;
+    border: none;
+    font-size: 14px;
+    color: #9E9E9E;
+}
+
+.request-dish-modal .buttons {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 20px;
+}
+
+.request-dish-modal button {
+    padding: 19px 25px;
+    width: 210px;
+    height: 58px;
+    border-radius: 10px;
+    font-weight: 700;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+}
+
+.request-dish-modal .cancel {
+    background: none;
+    border: 2px solid #1AC073;
+    color: #1AC073;
+}
+
+.request-dish-modal .submit {
+    background: #1AC073;
+    color: white;
+}
