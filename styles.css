@@ -147,8 +147,10 @@ nav ul li a {
     height: auto;
     display: flex;
     flex-direction: column;
+    gap: 10px;
     background: white; 
     padding: 10px 0;
+    border-radius: 0 0 10px 10px;
 }
 .menu-header{
     display: flex;
@@ -160,6 +162,7 @@ nav ul li a {
     display: flex;
     gap:80px;
     justify-content: space-between;
+    align-items: center;
     padding-right: 10px;
 }
 
@@ -173,29 +176,24 @@ nav ul li a {
 .rating-box {
     display: flex;
     gap: 10px;
+    padding: 2px;
+    border-radius: 5px;
+    background: #F7F8FA;
+    box-shadow: 0px 0px 1px 0px #00000040;
 }
-.rating, .time {
-    background: #000;
-    color: white;
-    padding: 5px 10px;
-    border-radius: 10px;
-    display: flex;
-    align-items: center;
-    gap: 5px;
+.delivery-time{
+    padding: 5px;
+    border-radius: 5px;
+    background: #F7F8FA;
+    box-shadow: 0px 0px 1px 0px #00000040;
 }
-.rating-box::before {
-    color: black;
-    font-size: 20px;
-}
-.star{
-    color: black;
-}
+
 .add-btn {
-    background: yellow;
+    background: #F3BA00;    ;
     border: none;
-    border-radius: 50%;
-    width: 30px;
-    height: 30px;
+    border-radius: 5px;
+    width: 23px;
+    height: 22px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -203,6 +201,10 @@ nav ul li a {
     font-weight: bold;
     cursor: pointer;
     color: white;
+}
+
+#popular-items{
+    margin-left: 200px;
 }
 
 .request-dish {
